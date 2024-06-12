@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <style>
+        body {
+            background-color: #191f36;
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 20px;
+        }
+        .image-section {
+            margin: 20px 0;
+        }
+        .image-section img {
+            width: 80%; /* Set the desired width */
+            height: 90%; /* Set the desired height */
+            object-fit: cover; /* Ensure images cover the area without distortion */
+            border: 2px solid #ffffff;
+            border-radius: 10px;
+        }
+        .title {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .description {
+            font-size: 16px;
+            margin-top: 10px;
+        }
+        .back-button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #ff5f5f;
+            color: #191f36;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        .back-button:hover {
+            background-color: #ff3f3f;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="image-section">
+            <div class="title">Vending Machine GUI</div>
+            <img src="CCPROG3.jpg" alt="Image 1">
+            <div class="description">MCO for CCPROG3 implemented using Java and JavaSwing for the GUI<br>
+                A functioning Vending Machine Simulator that allows the customization and dispensation of an Ice Cream<br>
+                Contains a Greedy Algorithm for change distribution and currency dandling
+                </div>
+        </div>
+        <div class="image-section">
+            <div class="title">Employee Management Database System</div>
+            <img src="CCINFOM.jpg" alt="Image 2">
+            <div class="description">Developed a Database application that manages employee personal information, employee work details, <br>attendance record, as well as performance and qualification.<br>
+                Implemented CRUD functionalities for the SQL Database Server<br>
+                Implemented employee clock in and out, rating an employee, report generation on employee satisfaction rate and attendance summary
+                </div>
+        </div>
+        <div class="image-section">
+            <div class="title">Anime Website Forum</div>
+            <img src="CCAPDEV.jpg" alt="Image 3">
+            <div class="description">Developed an anime web forum that allows users to interact with one another through posting and commenting.<br>
+                Designed the overall layout and design functionalities of the website<br>
+                CRUD functionalities
+                </div>
+        </div>
+        <a href="index.html" class="back-button">Back</a>
+    </div>
+</body>
+</html>
